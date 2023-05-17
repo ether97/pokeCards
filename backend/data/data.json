@@ -1,0 +1,30 @@
+{
+  "pokemon_card": {
+    "pokemon": {
+      "name": "Atmaja",
+      "abilities": {
+        "name": "Tantrum",
+        "effect": "Kill everything in sight"
+      },
+      "weight": 100,
+      "length": 30,
+      "type": "",
+      "weakness": "",
+      "retreat": 3,
+      "resistance": "",
+      "IVs": {
+        "Attack": "",
+        "Defense": "",
+        "Special_Attack": "",
+        "Special_Defense": "",
+        "Speed": "",
+        "HP": ""
+      }
+    }
+  },
+  "pokemon_background": "linear-gradient(to top right, turquoise, black)",
+  "pokemon_backgroundColor": "",
+  "card_background": "",
+  "card_backgroundColor": "transparent",
+  "card_border": "5px solid black"
+}
