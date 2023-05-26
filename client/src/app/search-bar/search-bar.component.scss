@@ -1,0 +1,32 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+  padding-left: 8px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  margin-left: 5px;
+  padding-left: 40px;
+}
+
+.pi-search {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  .pi-search {
+    left: 11%;
+  }
+}
