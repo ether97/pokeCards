@@ -1,3 +1,8 @@
+.grid {
+  text-align: center;
+  padding: 25px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
