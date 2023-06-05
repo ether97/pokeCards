@@ -1,6 +1,6 @@
-<a routerLink="/grid-item-detail" routerLinkActive="active">
+<a [routerLink]="['/pokemon', id]" routerLinkActive="active">
   <div class="grid-item-box">
-    <h2>Bulbasaur</h2>
-    <img src="assets/pokemon/1.png" alt="Pokemon Image" />
+    <h2>{{ capitalizeText(pokemon.name) }}</h2>
+    <img [src]="'assets/pokemon/' + id + '.png'" alt="Pokemon Image" />
   </div>
 </a>

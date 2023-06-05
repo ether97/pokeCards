@@ -1,5 +1,9 @@
 <div class="grid">
   <div class="grid-container">
-    <app-grid-item *ngFor="let item of items"></app-grid-item>
+    <app-grid-item
+      *ngFor="let pokemon of pokemons; let i = index"
+      [pokemon]="pokemons[i]"
+      [id]="i + 1"
+    ></app-grid-item>
   </div>
 </div>

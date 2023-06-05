@@ -7,7 +7,7 @@ import { GridItemDetailComponent } from './grid-item-detail/grid-item-detail.com
 
 const routes: Routes = [
   { path: '', component: GridComponent },
-  { path: 'grid-item-detail', component: GridItemDetailComponent },
+  { path: 'pokemon/:id', component: GridItemDetailComponent },
 ];
 
 @NgModule({

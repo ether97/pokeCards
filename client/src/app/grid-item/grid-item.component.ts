@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'app-grid-item',
   templateUrl: './grid-item.component.html',
-  styleUrls: ['./grid-item.component.scss']
+  styleUrls: ['./grid-item.component.scss'],
 })
 export class GridItemComponent {
+  constructor(private http: HttpClient) {}
 
+  @Input() pokemon: any = {};
+  @Input() id: number = 0;
+
+  ngOnInit() {}
+
+  capitalizeText(text: string): string {
+    if (!text) return '';
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
 }
